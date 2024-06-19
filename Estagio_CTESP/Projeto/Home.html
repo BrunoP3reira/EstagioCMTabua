@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Responsivo em PHP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h1>Cultiva Empresas</h1>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="empresas.html">Empresas</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="center">
+                <form action="pesquisar.php" method="GET">
+                    <input type="text" name="termo_pesquisa" placeholder="Pesquisar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .left h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .center {
+            margin-top: 10px;
+        }
+        .center form {
+            display: flex;
+        }
+        .center input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .center button {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5cb85c;
+            color: white;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .main-content h2 {
+            margin-top: 0;
+        }
+        .main-content p {
+            line-height: 1.6;
+        }
+    </style>
+
+    <div class="main-content">
+        <h2>Bem-vindo ao Cultiva Empresas</h2>
+        <p>Este é um protótipo de alta fidelidade de uma plataforma de diretório de empresas. Aqui você pode encontrar informações detalhadas sobre várias empresas em diferentes setores. Utilize a barra de pesquisa acima para encontrar empresas específicas.</p>
+        <h3>Como funciona:</h3>
+        <ul>
+            <li><strong>Pesquisa:</strong> Utilize a barra de pesquisa para encontrar empresas específicas pelo nome ou setor.</li>
+            <li><strong>Listagem de Empresas:</strong> Navegue pela seção de empresas para ver uma lista completa de todas as empresas registradas em nosso diretório.</li>
+            <li><strong>Dashboard:</strong> Acesse o dashboard para gerenciar as informações das empresas e visualizar estatísticas detalhadas.</li>
+        </ul>
+        <p>Este protótipo foi criado para demonstrar a funcionalidade básica de um diretório de empresas. Funcionalidades adicionais e melhorias serão implementadas nas versões futuras.</p>
+    </div>
+</body>
+</html>

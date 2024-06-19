@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Responsivo em PHP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h1>Cultiva Empresas</h1>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Empresas</a></li>
+                        <li><a href="#">Adicionar Empresas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Diretório de Empresas</h1>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar empresa...">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da Empresa</th>
+                <th>Setor</th>
+                <th>Localização</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="exibirempresa.html">Empresa 1</a></td>
+                <td>Tecnologia</td>
+                <td>Candosa, Tabua</td>
+            </tr>
+            <tr>
+                <td><a href="exibirempresa.html">Empresa 2</a></td>
+                <td>Saúde</td>
+                <td>Midoes, Tabua</td>
+            </tr>
+            <tr>
+                <td><a href="exibirempresa.html">Empresa 3</a></td>
+                <td>Educação</td>
+                <td>tabua, Tabua</td>
+            </tr>
+            <tr>
+                <td><a href="exibirempresa.html">Empresa 4</a></td>
+                <td>Finanças</td>
+                <td>venda da esperanca, PR</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
